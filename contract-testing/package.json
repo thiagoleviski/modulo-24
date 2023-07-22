@@ -1,0 +1,28 @@
+{
+  "name": "contract-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:consumer": "jest --runInBand test/consumer.spec.js"
+  },
+  "jest": {
+    "testTimeout": 20000,
+    "testEnvironment": "node",
+    "transform": {
+      ".(js|jsx|ts|tsx)": "@sucrase/jest-plugin"
+    }
+  },
+  "author": "",
+  "dependencies": {
+    "@pact-foundation/pact": "^9.17.0",
+    "@pact-foundation/pact-node": "10.15.0",
+    "@sucrase/jest-plugin": "2.2.0",
+    "@types/jest": "^29.5.2",
+    "axios": "0.24.0",
+    "dotenv": "10.0.0",
+    "jest": "27.3.1",
+    "start-server-and-test": "1.14.0"
+  },
+  "license": "ISC"
+}
